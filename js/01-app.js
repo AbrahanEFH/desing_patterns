@@ -1,12 +1,12 @@
 // Class Pattern
 
-class persona {
+class Persona {
     constructor(nombre, email) {
         this.nombre = nombre;
         this.email = email;
     }
 }
 
-const persona1 = new persona('Tomas', 'correo@pekky.com')
+const persona1 = new Persona('Tomas', 'correo@pekky.com')
 
 console.log(persona1)
