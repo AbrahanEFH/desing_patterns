@@ -28,5 +28,8 @@ class Trabajador extends Cliente {
 }
 
 const trabajador = new Trabajador('Thomas', 'correo@correo', 'Indra', 123414124, 'Madrid')
+const trabajador2 = new Trabajador('Luis', 'correo@correo', 'Indra', 123235432, 'Madrid')
+
 
 console.log(trabajador)
+console.log(trabajador2)
