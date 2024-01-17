@@ -1,0 +1,7 @@
+// Factory
+
+class InputHTML {
+    constructor() {
+
+    }
+}
