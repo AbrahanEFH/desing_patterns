@@ -11,3 +11,13 @@ class InputHTML {
     }
 }
 
+class HTMLFactory {
+    crearElemento(tipo, nombre) {
+        switch (tipo) {
+
+
+            default:
+                return;
+        }
+    }
+}
