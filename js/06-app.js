@@ -8,6 +8,6 @@ class Persona {
     }
 }
 
-const persona1 = new Persona(nombre`nombre = ${this.nombre}`)
+const persona1 = new Persona('thomas', 'correo@correo.com', 21231)
 
 console.log(persona1)
