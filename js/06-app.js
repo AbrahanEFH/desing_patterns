@@ -8,15 +8,12 @@ class Persona {
     }
 }
 
-const persona1 = new Persona('thomas', 'correo@correo.com', 21231)
-
-console.log(persona1)
-
-class Cliente extends Persona {
-    constructor(nombre, email, tlf, servicio) {
-        super(nombre, email, tlf)
-        this.servicio = servicio;
+const funcionesPersona = {
+    mostrarInformacion() {
+        console.log(`Nombre Persona: ${this.nombre} Email: ${this.email}`)
     }
 }
 
-const cliente = new Cliente('thomas', 'correo@correo')
+const cliente = new Persona('Thomas', 'correo@correo.com', 123124124)
+
+console.log(cliente)
