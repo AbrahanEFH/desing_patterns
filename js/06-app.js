@@ -14,6 +14,9 @@ const funcionesPersona = {
     }
 }
 
+// Añadir funcionesPersona a la clase de persona
+Object.assign(Persona.prototype, funcionesPersona)
+
 const cliente = new Persona('Thomas', 'correo@correo.com', 123124124)
 
 console.log(cliente)
