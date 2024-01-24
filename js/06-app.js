@@ -10,7 +10,10 @@ class Persona {
 
 const funcionesPersona = {
     mostrarInformacion() {
-        console.log(`Nombre Persona: ${this.nombre} Email: ${this.email}`)
+        console.log(`Nombre Persona: ${this.nombre}, Email: ${this.email} Tlf: ${this.tlf}`)
+    },
+    mostrarNombre() {
+        console.log(`Mi nombre es ${this.nombre}`)
     }
 }
 
@@ -20,3 +23,5 @@ Object.assign(Persona.prototype, funcionesPersona)
 const cliente = new Persona('Thomas', 'correo@correo.com', 123124124)
 
 console.log(cliente)
+cliente.mostrarInformacion()
+cliente.mostrarNombre()
