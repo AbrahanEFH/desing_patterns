@@ -29,9 +29,13 @@ restaurantApp.funciones = {
         platillos.forEach((platillo, index) => {
             console.log(`${index} : ${platillo.platillo} $${platillo.precio}`)
         })
+    },
+    ordenar: id => {
+        console.log(`Tu platillo : ${restaurantApp.platillos[id].platillo} se esta preparando`)
     }
 }
 
 const { platillos } = restaurantApp;
 
 restaurantApp.funciones.mostrarMenu()
+restaurantApp.funciones.ordenar(1)
