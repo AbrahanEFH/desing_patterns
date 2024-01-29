@@ -25,6 +25,10 @@ restaurantApp.platillos = [
 restaurantApp.funciones = {
     mostrarMenu: () => {
         console.log(`Bienvenidos a nuestro menú`)
+
+        platillos.forEach((platillo, index) => {
+            console.log(`${index} : ${platillo.platillo} $${platillo.precio}`)
+        })
     }
 }
 
