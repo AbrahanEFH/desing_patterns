@@ -26,7 +26,13 @@ Comprador.prototype = {
 }
 
 function Subasta() {
+    let compradores = {};
 
+    return {
+        registrar: usuario => {
+            compradores[usuario.nombre]
+        }
+    }
 }
 
 
@@ -36,6 +42,12 @@ const thomas = new Comprador('Thomas')
 const pablo = new Comprador('Pablo')
 const vendedor = new Vendedor('vendedor de autos')
 const subasta = new Subasta('subasta')
+
+// Registro
+subasta.registrar(thomas);
+subasta.registrar(pablo);
+subasta.registrar(vendedor);
+
 
 vendedor.oferta('Mustang 66', 3300)
 
