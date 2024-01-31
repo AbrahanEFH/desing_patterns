@@ -15,7 +15,14 @@ Vendedor.prototype = {
 }
 
 function Comprador(nombre) {
+    this.nombre = nombre;
+    this.sala = null;
+}
 
+Comprador.prototype = {
+    oferta: (cantidad, comprador) => {
+        console.log(`${comprador.nombre} : ${cantidad}`)
+    }
 }
 
 function Subasta() {
@@ -30,5 +37,11 @@ const pablo = new Comprador('Pablo')
 const vendedor = new Vendedor('vendedor de autos')
 const subasta = new Subasta('subasta')
 
-vendedor.oferta('Mustang 66', 33)
+vendedor.oferta('Mustang 66', 3300)
+
+thomas.oferta(350, thomas)
+pablo.oferta(450, pablo)
+thomas.oferta(550, thomas)
+pablo.oferta(650, pablo)
+
 vendedor.vendido('Pablo')
