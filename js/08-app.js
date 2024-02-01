@@ -51,6 +51,8 @@ subasta.registrar(vendedor);
 
 vendedor.oferta('Mustang 66', 3300)
 
+// Compradores
+
 thomas.oferta(350, thomas)
 pablo.oferta(450, pablo)
 thomas.oferta(550, thomas)
